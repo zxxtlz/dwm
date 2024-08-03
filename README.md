@@ -1,14 +1,11 @@
-# Luke's build of dwm
+# Zxxtlz's build of dwm
 
 ## FAQ
 
-> What are the bindings?
+> How to remove hide vacant tags?
 
-This is suckless, mmmbud, the source code is the documentation! Check out [config.h](config.h).
+I followed this [commit](https://git.insomniac.pl/ftpd/dotfiles/commit/6ba8e12e094efe14e0161546e964531c11ca0c8e?style=split&whitespace=show-all&show-outdated=#diff-0d6cc1b4acc0980057bde2edf29601b72252e1f0) from another user!
 
-Okay, okay, actually I keep a readme in `larbs.mom` for my whole system, including the binds here.
-Press <kbd>super+F1</kbd> to view it in dwm (zathura is required for that binding).
-I haven't kept `man dwm`/`dwm.1` updated though. PRs welcome on that, lol.
 
 ## Patches and features
 
@@ -28,7 +25,7 @@ I haven't kept `man dwm`/`dwm.1` updated though. PRs welcome on that, lol.
 ## Installation for newbs
 
 ```bash
-git clone https://github.com/LukeSmithxyz/dwm.git
+git clone https://github.com/zxxtlz/dwm.git
 cd dwm
 sudo make install
 ```
