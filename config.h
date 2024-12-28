@@ -3,7 +3,7 @@
 /* Constants */
 #define TERMINAL "st"
 #define TERMCLASS "St"
-#define BROWSER "firefox"
+#define BROWSER "librewolf"
 
 /* appearance */
 static unsigned int borderpx  = 3;        /* border pixel of windows */
@@ -42,7 +42,7 @@ static Sp scratchpads[] = {
 };
 
 /* tagging */
-static const char *tags[] = { "1", "", "", "", "", "6", "7", "8", "9" };
+static const char *tags[] = { "", "", "", "", "", "" };
 
 static const Rule rules[] = {
 	/* xprop(1):
@@ -50,7 +50,10 @@ static const Rule rules[] = {
 	 *	WM_NAME(STRING) = title
 	*/
 	/* class    instance      title       	 tags mask    isfloating   isterminal  noswallow  monitor */
-	{ "Gimp",     NULL,       NULL,       	    1 << 8,       0,           0,         0,        -1 },
+	{ "Telegram",     NULL,       NULL,       	    1 << 8,       0,           0,         0,        -1 },
+	{ "LibreWolf", 		NULL, 		NULL,		1 << 1,		0,	0,	0,	-1 },
+	{ "Localsend", 	NULL, 		NULL,		1 << 0,		0, 	0, 	0, 	-1 },
+	{ "KeePassXC", 	NULL, 		NULL, 		1 << 0, 	0, 	0, 	0, 	-1},
 	{ TERMCLASS,  NULL,       NULL,       	    0,            0,           1,         0,        -1 },
 	{ NULL,       NULL,       "Event Tester",   0,            0,           0,         1,        -1 },
 	{ TERMCLASS,      "floatterm", NULL,       	    0,       1,           1,         0,        -1 },
